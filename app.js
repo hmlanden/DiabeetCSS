@@ -116,5 +116,5 @@ d3.csv("data.csv", function (err, healthData) {
     chartGroup.append("text")
         .attr("transform", `translate(${width/2}, -15)`)
         .attr("class", "titleText")
-        .text("Poverty & Diabetes in the United States");
+        .text("Poverty & Diabetes in the United States (2014)");
 });
