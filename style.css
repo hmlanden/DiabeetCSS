@@ -1,0 +1,34 @@
+/* Add formatting for tooltips*/
+
+.tooltip {
+    position: absolute;
+    width: 150px;
+    height: 100px;
+    padding: 2px;
+    padding-top: 8px;
+    font: 12px sans-serif;
+    color: white;
+    text-align: center;
+    background: maroon;
+    border: 0;
+    border-radius: 10px;
+}
+
+/* Add formatting for chart axes*/
+
+.axisText {
+    font-family: sans-serif;
+    font-weight: bold;
+    fill: #000000;
+    text-anchor: middle;
+}
+
+/* Add formatting for chart titles*/
+
+.titleText {
+    font-family: sans-serif;
+    font-weight: bold;
+    fill: #000000;
+    text-anchor: middle;
+    font-size: 18pt;
+}

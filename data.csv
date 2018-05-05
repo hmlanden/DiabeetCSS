@@ -1,0 +1,53 @@
+Id,stateOrTerritory,abbr,percentBelowPovertyLevel,haveDiabetes
+1,Alabama,AL,19.25,12.9
+2,Alaska,AK,11.23,7.4
+3,Arizona,AZ,18.24,10.1
+4,Arkansas,AR,18.87,12.8
+5,California,CA,16.45,10.3
+6,Colorado,CO,12.04,7.3
+7,Connecticut,CT,10.75,9.2
+8,Delaware,DE,12.48,11.1
+9,District of Columbia,DC,17.73,8.4
+10,Florida,FL,16.5,11.2
+11,Georgia,GA,18.3,11.6
+12,Hawaii,HI,11.36,9.8
+13,Idaho,ID,14.85,7.6
+14,Illinois,IL,14.35,10.1
+15,Indiana,IN,15.24,10.7
+16,Iowa,IA,12.24,9.5
+17,Kansas,KS,13.56,10.3
+18,Kentucky,KY,19.12,12.5
+19,Louisiana,LA,19.84,11.3
+20,Maine,ME,14.13,9.5
+21,Maryland,MD,10.11,10.1
+22,Massachusetts,MA,11.63,9.7
+23,Michigan,MI,16.2,10.4
+24,Minnesota,MN,11.46,8.1
+25,Mississippi,MS,21.52,13
+26,Missouri,MO,15.46,11.1
+27,Montana,MT,15.43,8.8
+28,Nebraska,NE,12.43,9.2
+29,Nevada,NV,15.24,9.6
+30,New Hampshire,NH,9.16,9.2
+31,New Jersey,NJ,11.1,9.7
+32,New Mexico,NM,21.32,11.5
+33,New York,NY,15.93,10
+34,North Carolina,NC,17.22,10.8
+35,North Dakota,ND,11.55,8.6
+36,Ohio,OH,15.84,11.7
+37,Oklahoma,OK,16.59,12
+38,Oregon,OR,16.55,9
+39,Pennsylvania,PA,13.6,11.2
+40,Rhode Island,RI,14.34,9.5
+41,South Carolina,SC,17.99,12
+42,South Dakota,SD,14.17,9.1
+43,Tennessee,TN,18.34,13
+44,Texas,TX,17.17,11
+45,Utah,UT,11.73,7.1
+46,Vermont,VT,12.15,7.9
+47,Virginia,VA,11.8,9.7
+48,Washington,WA,13.19,8.9
+49,West Virginia,WV,18.28,14.1
+50,Wisconsin,WI,13.18,9
+51,Wyoming,WY,11.19,8.4
+52,Puerto Rico,PR,46.21,15.7
