@@ -76,20 +76,22 @@ d3.csv("data.csv", function (err, healthData) {
     /*--------------------------------------------------------------------------
     +++ Step 6: Create tooltip, hide it, and add triggering event listener
     --------------------------------------------------------------------------*/
-
     var toolTip = d3.tip()
         .attr("class", "tooltip")
         .offset([80, -60])
         .html(function (d) {
-            return (`${d.stateOrTerritory}<br>Income Below Poverty Level: ${d.percentBelowPovertyLevel}%<br>Population with Diabetes: ${d.haveDiabetes}%`);
+            return (`<strong>${d.stateOrTerritory}</strong><br><br>Income Below Poverty Level: ${d.percentBelowPovertyLevel}%<br>Population with Diabetes: ${d.haveDiabetes}%`);
         });
 
     chartGroup.call(toolTip);
 
-    circlesGroup.on("click", function (data) {
+    circlesGroup.on("mouseover", function (data) {
             toolTip.show(data);
         })
         .on("mouseout", function (data, index) {
+
+            toolTip.transition.duration(15).hide(data);
+        }).on("click", function (data, index) {
             toolTip.hide(data);
         });
 
