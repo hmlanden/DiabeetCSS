@@ -70,7 +70,7 @@ d3.csv("data.csv", function (err, healthData) {
         .attr("cx", d => xLinearScale(d.percentBelowPovertyLevel))
         .attr("cy", d => yLinearScale(d.haveDiabetes))
         .attr("r", "15")
-        .attr("fill", "orangered")
+        .attr("fill", "darkorchid")
         .attr("opacity", ".50")
 
     /*--------------------------------------------------------------------------
@@ -80,7 +80,7 @@ d3.csv("data.csv", function (err, healthData) {
         .attr("class", "tooltip")
         .offset([80, -60])
         .html(function (d) {
-            return (`<strong>${d.stateOrTerritory}</strong><br><br>Income Below Poverty Level: ${d.percentBelowPovertyLevel}%<br>Population with Diabetes: ${d.haveDiabetes}%`);
+            return (`<strong><u>${d.stateOrTerritory}</u></strong><br><br>Income Below Poverty Level: ${d.percentBelowPovertyLevel}%<br>Population with Diabetes: ${d.haveDiabetes}%`);
         });
 
     chartGroup.call(toolTip);

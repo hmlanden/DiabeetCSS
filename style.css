@@ -7,9 +7,9 @@
     padding: 2px;
     padding-top: 8px;
     font: 12px sans-serif;
-    color: white;
+    color: black;
     text-align: center;
-    background: maroon;
+    background-color: coral;
     border-color: black;
     border-radius: 10px;
 }
@@ -31,4 +31,16 @@
     fill: #000000;
     text-anchor: middle;
     font-size: 18pt;
+}
+
+
+/* Add formatting for bulleted list*/
+
+.primaryBullet {
+    list-style-position: outside;
+    font-weight: bold;
+}
+
+.secondaryBullet {
+    list-style-position: inside;
 }
