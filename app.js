@@ -33,10 +33,12 @@ function makeResponsive() {
     var width = svgWidth - margin.left - margin.right;
     var height = svgHeight - margin.top - margin.bottom;
 
+    // set chart attributes
     var svg = d3.select(".chart")
         .append("svg")
         .attr("width", svgWidth)
         .attr("height", svgHeight);
+
 
     var chartGroup = svg.append("g")
         .attr("transform", `translate(${margin.left}, ${margin.top})`);
@@ -44,6 +46,7 @@ function makeResponsive() {
     /*--------------------------------------------------------------------------
     +++ Step 2: Import data and parse it.
     --------------------------------------------------------------------------*/
+    // import data
     d3.csv("data.csv", function (err, healthData) {
         if (err) throw err;
 
@@ -99,19 +102,21 @@ function makeResponsive() {
             .attr("class", "tooltip")
             .offset([80, -60])
             .html(function (d) {
-                return (`<strong><u>${d.stateOrTerritory}</u></strong><br><br>Income Below Poverty Level: ${d.percentBelowPovertyLevel}%<br>Population with Diabetes: ${d.haveDiabetes}%`);
+                return (`<h5 class="tooltipTitle">${d.stateOrTerritory}</h5>Percent Population with...<ul><li><strong>...Income Below Poverty Level: </strong> ${d.percentBelowPovertyLevel}%</li><li><strong>...Diabetes: </strong>${d.haveDiabetes}%</li>`);
             });
 
         chartGroup.call(toolTip);
 
-        circlesGroup.on("mouseover", function (data) {
-                toolTip.show(data);
+        circlesGroup
+            .on("mouseover", function (data) {
+                toolTip.show(data)
+                    .style("opacity", .9);
             })
-            .on("mouseout", function (data, index) {
 
-                toolTip.transition.duration(15).hide(data);
-            }).on("click", function (data, index) {
-                toolTip.hide(data);
+            .on("mouseout", function (data) {
+                toolTip.transition()
+                    .delay(.0001)
+                    .hide(data)
             });
 
         /*--------------------------------------------------------------------------
