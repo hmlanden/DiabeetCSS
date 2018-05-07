@@ -95,7 +95,7 @@ function makeResponsive() {
             .attr("r", function (d) {
                 return d.sampleSize / 75;
             })
-            .attr("fill", "darkorchid")
+            .attr("fill", "mediumblue")
             .attr("opacity", ".50")
 
         /*--------------------------------------------------------------------------

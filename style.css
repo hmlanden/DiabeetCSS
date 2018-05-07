@@ -9,8 +9,8 @@
     font: 12px sans-serif;
     color: black;
     text-align: left;
-    background-color: coral;
-    border: 3px solid #FF00FF;
+    background-color: whitesmoke;
+    border: 3px solid;
     border-color: black;
     border-radius: 10px;
 }
@@ -56,6 +56,16 @@
     width: 125x;
 }
 
-.chart {
-    border: 1px solid black;
+.headerImage {
+    resize: both;
+    height: auto;
+    width: 800px;
+}
+
+.mainBody {
+    background-color: rgba(0, 139, 139, 0.5);
+}
+
+a {
+    color: darkmagenta;
 }

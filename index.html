@@ -18,69 +18,80 @@
 
 <body>
     <div class="container-fluid">
-        <h1 class="display-3 text-dark">Poverty and Diabetes in the United States</h1>
-        <blockquote class="blockquote">
-            <p class="mb-0">The story that has not been getting out is that there is a clear and extraordinary correlation between obesity and social inequality. Obesity is invariably presented as a diet issue for nutritionists, whereas social inequality is deemed the domain of sociologists and economists. Put another way, even as the inequality gap becomes more and more obvious there's been a medicalisation of a social problem. Yet obesity is not just a matter for nutritionists: rather, it is a product of social inequality and requires a collective social response.</p>
-            <footer class="blockquote-footer">(2018) Martin Cohen, <cite title="Source Title"><a href="https://medicalxpress.com/news/2018-02-poverty-individual-choice-extraordinary-obesity.html">The Conversation</a></cite></footer>
-        </blockquote>
+        <div class="row align-items-center">
+            <div class="col align-items-center">
+                <h1 class="display-2 text-dark">Poverty and Diabetes in the United States</h1>
+            </div>
+            <div class="col align-items-center">
+                <img class="headerImage" src="https://images.agoramedia.com/everydayhealth/gcms/Does-Sugar-Cause-T2D-1440x810.jpg" alt="Image Source: Everyday Health">
+            </div>
+        </div>
     </div>
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col">
-                <h1 class="display-4 text-dark">Visualizing the Relationship between Poverty & Diabetes</h1>
-                <p>In order to better understand the relationship between poverty and diabetes, we performed an analysis using data provided by the United States Census Bureau and the CDC.</p>
+    <div class="mainBody">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col">
+                    <h1 class="display-4 text-dark">Visualizing the Relationship between Poverty & Diabetes</h1>
+                    <blockquote class="blockquote">
+                        <p class="mb-0">The story that has not been getting out is that there is a clear and extraordinary correlation between obesity and social inequality. Obesity is invariably presented as a diet issue for nutritionists, whereas social inequality is deemed the domain of sociologists and economists. Put another way, even as the inequality gap becomes more and more obvious there's been a medicalisation of a social problem. Yet obesity is not just a matter for nutritionists: rather, it is a product of social inequality and requires a collective social response.</p>
+                        <footer class="blockquote-footer">(2018) Martin Cohen, <cite title="Source Title"><a href="https://medicalxpress.com/news/2018-02-poverty-individual-choice-extraordinary-obesity.html">The Conversation</a></cite></footer>
+                    </blockquote>
+                    <p>In order to better understand the relationship between poverty and diabetes, we performed an analysis using data provided by the United States Census Bureau and the CDC.</p>
+                </div>
             </div>
         </div>
-        <div class="row">
-            <div class="col">
-                <p class="h2 text-dark">Data Analysis</p>
-                <p class="h4 text-dark">Results</p>
-                <p>The correlation coefficient between the percent of the population in poverty and the percent of the population with diabetes is <strong>0.7156</strong>, which represents a strong positive relationship. Thus, we can expect in the United States that as the percent of the population with a income below the poverty level increases, we will see the percent of the population with diabetes increase.</p>
-                <p class="h4 text-dark">Potential Problems</p>
-                The data point for Puerto Rico could indicate that, rather than a linear relationship, the relationship between the variables may instead be logarithmic. R^2 for the calculated linear regression is <strong>0.51</strong>, but for a logarithmic regression line, R^2 is 0.56, indicating that the points fit the logarithmic line slightly better.
-                <br> Another potential problem lies within the data itself. While the poverty data is sourced from the US Census, the diabetes data is described as "Crude Prevalance." Sample sizes vary a great deal from state to state. In order to help take this into account, the size of the bubbles in the chart below reflect the sample size for the data on diabetes prevalence.
-                <p class="h4 text-dark">Opportunities for Further Research</p>
-            </div>
-            <div class="col">
-                <p class="h2 text-dark">Data Sources</p>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-7">
+                    <p class="h2 text-dark">Data Analysis</p>
+                    <p class="h4 text-dark">Results</p>
+                    <p>The correlation coefficient between the percent of the population in poverty and the percent of the population with diabetes is <strong>0.7156</strong>, which represents a strong positive relationship. Thus, we can expect in the United States that as the percent of the population with a income below the poverty level increases, we will see the percent of the population with diabetes increase.</p>
+                    <p class="h4 text-dark">Potential Problems</p>
+                    <p>The data point for Puerto Rico could indicate that, rather than a linear relationship, the relationship between the variables may instead be logarithmic. R^2 for the calculated linear regression is <strong>0.51</strong>, but for a logarithmic regression line, R^2 is 0.56, indicating that the points fit the logarithmic line slightly better.</p>
+                    <p>Another potential problem lies within the data itself. While the poverty data is sourced from the US Census, the diabetes data is described as "Crude Prevalance." Sample sizes vary a great deal from state to state. In order to help take this into account, the size of the bubbles in the chart below reflect the sample size for the data on diabetes prevalence.</p>
+                    <p class="h4 text-dark">Opportunities for Further Research</p>
+                </div>
+                <div class="col-5">
+                    <p class="h2 text-dark">Data Sources</p>
 
-                <P>
-                    To analyze the relationship between poverty and diabetes in the United States, data was drawn from the following sources:
-                    <ul>
-                        <li class="primaryBullet">
-                            B17001 - POVERTY STATUS IN THE PAST 12 MONTHS BY SEX BY AGE Universe: Population for whom poverty status is determined
+                    <P>
+                        To analyze the relationship between poverty and diabetes in the United States, data was drawn from the following sources:
+                        <ul>
+                            <li class="primaryBullet">
+                                B17001 - POVERTY STATUS IN THE PAST 12 MONTHS BY SEX BY AGE Universe: Population for whom poverty status is determined
 
-                        </li>
-                        <li class="secondaryBullet">
-                            Source: <a href="https://factfinder.census.gov/faces/tableservices/jsf/pages/productview.xhtml?pid=ACS_14_1YR_B17001&prodType=table">American FactFinder</a>
-                        </li>
-                        <li class="secondaryBullet">
-                            Type of Data: 2014 American Community Survey 1-Year Estimates
-                        </li>
-                        <li class="secondaryBullet">
-                            Data Provided by: U.S. Census Bureau
-                        </li>
-                        <li class="primaryBullet">
-                            Behavioral Risk Factor Surveillance System (BRFSS) Prevalence Data
-                        </li>
-                        <li class="secondaryBullet">
-                            Type of Data: 2014 Overall (Not Broken Out)
-                        </li>
-                        <li class="secondaryBullet">
-                            Source: <a href="https://chronicdata.cdc.gov/Behavioral-Risk-Factors/BRFSS-2014-Overall/5ra3-ixqq">Chronic Disease and Health Promotion Data & Indicators</a>
-                        </li>
-                        <li class="secondaryBullet">
-                            Data Provided by: Center for Disease Control and Prevention
-                        </li>
-                    </ul>
-                </P>
+                            </li>
+                            <li class="secondaryBullet">
+                                Source: <a href="https://factfinder.census.gov/faces/tableservices/jsf/pages/productview.xhtml?pid=ACS_14_1YR_B17001&prodType=table">American FactFinder</a>
+                            </li>
+                            <li class="secondaryBullet">
+                                Type of Data: 2014 American Community Survey 1-Year Estimates
+                            </li>
+                            <li class="secondaryBullet">
+                                Data Provided by: U.S. Census Bureau
+                            </li>
+                            <li class="primaryBullet">
+                                Behavioral Risk Factor Surveillance System (BRFSS) Prevalence Data
+                            </li>
+                            <li class="secondaryBullet">
+                                Type of Data: 2014 Overall (Not Broken Out)
+                            </li>
+                            <li class="secondaryBullet">
+                                Source: <a href="https://chronicdata.cdc.gov/Behavioral-Risk-Factors/BRFSS-2014-Overall/5ra3-ixqq">Chronic Disease and Health Promotion Data & Indicators</a>
+                            </li>
+                            <li class="secondaryBullet">
+                                Data Provided by: Center for Disease Control and Prevention
+                            </li>
+                        </ul>
+                    </P>
+                </div>
             </div>
-        </div>
-        <div class="row">
-            <div class="col">
-                To learn more, check out the chart below!
-                <!-- Add chart -->
-                <div class="chart">
+            <div class="row">
+                <div class="col">
+                    To learn more, check out the chart below!
+                    <!-- Add chart -->
+                    <div class="chart">
+                    </div>
                 </div>
             </div>
         </div>
