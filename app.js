@@ -103,7 +103,7 @@ function makeResponsive() {
         --------------------------------------------------------------------------*/
         var toolTip = d3.tip()
             .attr("class", "tooltip")
-            .offset([-10, -150])
+            .offset([-5, -125])
             .html(function (d) {
                 return (`<h5 class="tooltipTitle">${d.stateOrTerritory}</h5>
                         <p><strong>Sample Size for Diabetes Data: </strong> ${d.sampleSize}</p>
