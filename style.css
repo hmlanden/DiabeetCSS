@@ -9,7 +9,7 @@
     font: 12px sans-serif;
     color: black;
     text-align: left;
-    background-color: whitesmoke;
+    background-color: antiquewhite;
     border: 3px solid;
     border-color: black;
     border-radius: 10px;
@@ -68,4 +68,14 @@
 
 a {
     color: darkmagenta;
+}
+
+#dataAnalysis {
+    background-color: antiquewhite;
+    border: 3px solid;
+    border-color: midnightblue;
+}
+
+#wholePage {
+    background-color: antiquewhite;
 }
