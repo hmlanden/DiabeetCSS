@@ -23,7 +23,7 @@ function makeResponsive() {
 
     // set margin sizes
     var margin = {
-        top: 40,
+        top: 50,
         right: 40,
         bottom: 100,
         left: 100
@@ -52,8 +52,9 @@ function makeResponsive() {
 
         // Parse data
         healthData.forEach(function (data) {
-            healthData.percentBelowPovertyLevel = +healthData.percentBelowPovertyLevel;
-            healthData.haveDiabetes = +healthData.haveDiabetes;
+            data.percentBelowPovertyLevel = +data.percentBelowPovertyLevel;
+            data.haveDiabetes = +data.haveDiabetes;
+            data.sampleSize = +data.sampleSize;
         });
 
         /*--------------------------------------------------------------------------
@@ -91,7 +92,9 @@ function makeResponsive() {
             .append("circle")
             .attr("cx", d => xLinearScale(d.percentBelowPovertyLevel))
             .attr("cy", d => yLinearScale(d.haveDiabetes))
-            .attr("r", "15")
+            .attr("r", function (d) {
+                return d.sampleSize / 75;
+            })
             .attr("fill", "darkorchid")
             .attr("opacity", ".50")
 
@@ -100,9 +103,13 @@ function makeResponsive() {
         --------------------------------------------------------------------------*/
         var toolTip = d3.tip()
             .attr("class", "tooltip")
-            .offset([80, -60])
+            .offset([-10, -150])
             .html(function (d) {
-                return (`<h5 class="tooltipTitle">${d.stateOrTerritory}</h5>Percent Population with...<ul><li><strong>...Income Below Poverty Level: </strong> ${d.percentBelowPovertyLevel}%</li><li><strong>...Diabetes: </strong>${d.haveDiabetes}%</li>`);
+                return (`<h5 class="tooltipTitle">${d.stateOrTerritory}</h5>
+                        <p><strong>Sample Size for Diabetes Data: </strong> ${d.sampleSize}</p>
+                        Percent Population...
+                        <ul><li><strong>...Below Poverty Level: </strong> ${d.percentBelowPovertyLevel}%</li>
+                        <li><strong>...With Diabetes: </strong>${d.haveDiabetes}%</li>`);
             });
 
         chartGroup.call(toolTip);

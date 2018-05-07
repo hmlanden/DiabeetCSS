@@ -19,54 +19,149 @@
 <body>
     <div class="container-fluid">
         <h1 class="display-3 text-dark">Poverty and Diabetes in the United States</h1>
-
-
         <blockquote class="blockquote">
             <p class="mb-0">The story that has not been getting out is that there is a clear and extraordinary correlation between obesity and social inequality. Obesity is invariably presented as a diet issue for nutritionists, whereas social inequality is deemed the domain of sociologists and economists. Put another way, even as the inequality gap becomes more and more obvious there's been a medicalisation of a social problem. Yet obesity is not just a matter for nutritionists: rather, it is a product of social inequality and requires a collective social response.</p>
             <footer class="blockquote-footer">(2018) Martin Cohen, <cite title="Source Title"><a href="https://medicalxpress.com/news/2018-02-poverty-individual-choice-extraordinary-obesity.html">The Conversation</a></cite></footer>
         </blockquote>
     </div>
     <div class="container-fluid">
-        <h2 class="display-5 text-dark">Visualizing the Relationship between Poverty & Diabetes</h2>
-        <P>
-            To analyze the relationship between poverty and diabetes in the United States, data was drawn from the following sources:
-            <ul>
-                <li class="primaryBullet">
-                    B17001 - POVERTY STATUS IN THE PAST 12 MONTHS BY SEX BY AGE Universe: Population for whom poverty status is determined
+        <div class="row">
+            <div class="col">
+                <h1 class="display-4 text-dark">Visualizing the Relationship between Poverty & Diabetes</h1>
+                <p>In order to better understand the relationship between poverty and diabetes, we performed an analysis using data provided by the United States Census Bureau and the CDC.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <p class="h2 text-dark">Data Analysis</p>
+                <p class="h4 text-dark">Results</p>
+                <p>The correlation coefficient between the percent of the population in poverty and the percent of the population with diabetes is <strong>0.7156</strong>, which represents a strong positive relationship. Thus, we can expect in the United States that as the percent of the population with a income below the poverty level increases, we will see the percent of the population with diabetes increase.</p>
+                <p class="h4 text-dark">Potential Problems</p>
+                The data point for Puerto Rico could indicate that, rather than a linear relationship, the relationship between the variables may instead be logarithmic. R^2 for the calculated linear regression is <strong>0.51</strong>, but for a logarithmic regression line, R^2 is 0.56, indicating that the points fit the logarithmic line slightly better.
+                <br> Another potential problem lies within the data itself. While the poverty data is sourced from the US Census, the diabetes data is described as "Crude Prevalance." Sample sizes vary a great deal from state to state. In order to help take this into account, the size of the bubbles in the chart below reflect the sample size for the data on diabetes prevalence.
+                <p class="h4 text-dark">Opportunities for Further Research</p>
+            </div>
+            <div class="col">
+                <p class="h2 text-dark">Data Sources</p>
 
-                </li>
-                <li class="secondaryBullet">
-                    Source: <a href="https://factfinder.census.gov/faces/tableservices/jsf/pages/productview.xhtml?pid=ACS_14_1YR_B17001&prodType=table">American FactFinder</a>
-                </li>
-                <li class="secondaryBullet">
-                    Type of Data: 2014 American Community Survey 1-Year Estimates
-                </li>
-                <li class="secondaryBullet">
-                    Data Provided by: U.S. Census Bureau
-                </li>
-                <li class="primaryBullet">
-                    Behavioral Risk Factor Surveillance System (BRFSS) Prevalence Data
-                </li>
-                <li class="secondaryBullet">
-                    Type of Data: 2014 Overall (Not Broken Out)
-                </li>
-                <li class="secondaryBullet">
-                    Source: <a href="https://chronicdata.cdc.gov/Behavioral-Risk-Factors/BRFSS-2014-Overall/5ra3-ixqq">Chronic Disease and Health Promotion Data & Indicators</a>
-                </li>
-                <li class="secondaryBullet">
-                    Data Provided by: Center for Disease Control and Prevention
-                </li>
-            </ul>
-        </P>
+                <P>
+                    To analyze the relationship between poverty and diabetes in the United States, data was drawn from the following sources:
+                    <ul>
+                        <li class="primaryBullet">
+                            B17001 - POVERTY STATUS IN THE PAST 12 MONTHS BY SEX BY AGE Universe: Population for whom poverty status is determined
+
+                        </li>
+                        <li class="secondaryBullet">
+                            Source: <a href="https://factfinder.census.gov/faces/tableservices/jsf/pages/productview.xhtml?pid=ACS_14_1YR_B17001&prodType=table">American FactFinder</a>
+                        </li>
+                        <li class="secondaryBullet">
+                            Type of Data: 2014 American Community Survey 1-Year Estimates
+                        </li>
+                        <li class="secondaryBullet">
+                            Data Provided by: U.S. Census Bureau
+                        </li>
+                        <li class="primaryBullet">
+                            Behavioral Risk Factor Surveillance System (BRFSS) Prevalence Data
+                        </li>
+                        <li class="secondaryBullet">
+                            Type of Data: 2014 Overall (Not Broken Out)
+                        </li>
+                        <li class="secondaryBullet">
+                            Source: <a href="https://chronicdata.cdc.gov/Behavioral-Risk-Factors/BRFSS-2014-Overall/5ra3-ixqq">Chronic Disease and Health Promotion Data & Indicators</a>
+                        </li>
+                        <li class="secondaryBullet">
+                            Data Provided by: Center for Disease Control and Prevention
+                        </li>
+                    </ul>
+                </P>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                To learn more, check out the chart below!
+                <!-- Add chart -->
+                <div class="chart">
+                </div>
+            </div>
+        </div>
     </div>
-
-    <!-- Add chart -->
-    <div class="chart">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col">
+                <h1 class="display-3 text-dark">More on Poverty & Diabetes</h1>
+                <p>To read more on poverty and diabetes, check out the links below! Click on the images to view the full articles.</p>
+            </div>
+        </div>
     </div>
-
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col">
+                <ul class="list-unstyled">
+                    <li class="media">
+                        <a href="http://care.diabetesjournals.org/content/35/11/2286">
+                        <img class="mr-3" src="https://photos.smugmug.com/WebDesign/Design/i-VwmKWsd/0/706d4896/L/Ada_icon-L.jpg" alt="American Diabetes Association">
+                        </a>
+                        <div class="media-body">
+                            <h5 class="mt-0 mb-1">Poverty Increases Type 2 Diabetes Incidence and Inequality of Care Despite Universal Health Coverage</h5>
+                            "Poverty is associated not only with higher diabetes incidence but also with inequality of diabetes care in a northeast Asian population, despite universal health coverage. In Western economies, low-income populations have been found to be more likely to develop diabetes (1,2). A hazardous home environment, unhealthy behaviors, obesity, and stress are all risks contributing to a higher incidence of diabetes among poor populations (1,3,4)."
+                        </div>
+                    </li>
+                    <li class="media my-4">
+                        <a href="https://www.cdc.gov/mmwr/volumes/65/wr/mm6545a4.htm">
+                        <img class="mr-3" src="https://www.thepacker.com/sites/default/files/cdc_0.png" alt="Center for Disease Control">
+                        </a>
+                        <div class="media-body">
+                            <h5 class="mt-0 mb-1">Disparities in the Prevalence of Diagnosed Diabetes — United States, 1999–2002 and 2011–2014</h5>
+                            "Recent evidence indicates that the prevalence of diagnosed diabetes among non-Hispanic black (black), Hispanic, and poorly educated adults continues to increase but has leveled off among non-Hispanic whites (whites) and persons with higher education (2). During 2004–2010, CDC reported marked racial/ethnic and socioeconomic position disparities in diabetes prevalence and increases in the magnitude of these disparities over time (3)."
+                        </div>
+                    </li>
+                    <li class="media">
+                        <a href="https://www.huffingtonpost.com/dr-mark-hyman/not-having-enough-food-ca_b_721344.html">
+                        <img class="mr-3" src="https://d15mj6e6qmt1na.cloudfront.net/i/28034489/300x300/c" alt="Huffington Post">
+                        </a>
+                        <div class="media-body">
+                            <h5 class="mt-0 mb-1">The Link Between Poverty, Obesity and Diabetes</h5>
+                            "...for a large portion of Americans floating on or sinking beneath the poverty line this means bingeing on cheap, sugary, starchy, fatty calories in order to avoid hunger. <br> Many poor people in this country are consuming an excess of nutritionally-depleted, cheap calories from sodas, processed foods, and junk food. These folks scarcely eat whole, fresh foods at all, and for good reason: We have made calories cheap, but real food expensive."
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="col">
+                <ul class="list-unstyled">
+                    <li class="media">
+                        <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4021012/">
+                        <img class="mr-3" src="https://yt3.ggpht.com/a-/AJLlDp2n66F7itRlET7y9Y1z6thbAIwsW19i3HAqGQ=s900-mo-c-c0xffffffff-rj-k-no" alt="U.S. National Institutes of Health's National Library of Medicine">
+                        </a>
+                        <div class="media-body">
+                            <h5 class="mt-0 mb-1">Disparities in Diabetes: The Nexus of Race, Poverty, and Place</h5>
+                            "Individual poverty increased the odds of having diabetes for both Whites and Blacks. Living in a poor neighborhood increased the odds of having diabetes for Blacks and poor Whites."
+                            <br> "To address race disparities in diabetes, policymakers should address problems created by concentrated poverty (e.g., lack of access to reasonably priced fruits and vegetables, recreational facilities, and health care services; [...]). Housing and development policies in urban areas should avoid creating high-poverty neighborhoods."
+                        </div>
+                    </li>
+                    <li class="media my-4">
+                        <a href="http://www.newsweek.com/world-health-day-diabetes-soars-developing-countries-poor-feel-rapid-444938">
+                        <img class="mr-3" src="https://i.vimeocdn.com/portrait/9506880_300x300" alt="Newsweek">
+                        </a>
+                        <div class="media-body">
+                            <h5 class="mt-0 mb-1">WORLD HEALTH DAY: DIABETES SOARS IN DEVELOPING COUNTRIES AS POOR UNDERGO ‘RAPID URBANIZATION’</h5>
+                            The findings shed light on the “risk cocktail” linking the disease with city life. Factors ranged from increased junk food consumption and lack of safe spaces for exercise to social isolation and economic inequalities.[...] In terms of diabetes, Krug said poverty is also a factor, as people in poorer countries have a harder time accessing healthy foods. Healthcare systems in more affluent countries are also better positioned to intervene to prevent diabetes in adult populations at growing risk.
+                        </div>
+                    </li>
+                    <li class="media">
+                        <a href="https://www.washingtonpost.com/news/to-your-health/wp/2016/04/06/diabetes-was-once-a-problem-of-the-rich-now-it-belongs-to-the-poor/?noredirect=on&utm_term=.95e6ece45dfb">
+                        <img class="mr-3" src="https://www.afsc.org/sites/afsc.civicactions.net/files/styles/normal/public/images/Washington%20Post.png?itok=KO6YxW9K" alt="The Washington Post">
+                        </a>
+                        <div class="media-body">
+                            <h5 class="mt-0 mb-1">Diabetes was once a problem of the rich. Now it belongs to the poor.</h5>
+                            "Most of the 422 million adults living with diabetes are, in fact, in poorer countries, the WHO found. The disease has spread unequally, too. ...diabetes prevalence rose faster in low- and middle-income countries than high-income ones. ...diabetes prevalence in high-income countries rose from just over 5 percent to about 7 percent. Low-income countries saw rates grow from just over 3 percent to more than 7 percent, overtaking high-income countries for the first time within the past decade."
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
     <!-- Insert scripts -->
     <script type="text/javascript" src="app.js"></script>
-
 </body>
 
 </html>
